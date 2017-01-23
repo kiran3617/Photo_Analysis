@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+
+</script>
+<style>
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+   
+
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #1569C7;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #1569C7;
+    color: white;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.float-right {
+float: left;
+width: 80%;
+
+}
+</style>
+
+</head>
+<body>
+
+<ul>
+   <li><a href="HomePage.html" target="iframe_div">Home Page</a></li>
+  <li><a  href="PhotoAnalysis.jsp" target="iframe_div">Upload Image</a></li>
+</ul> 
+
+
+<div style="margin-left:15%;padding:1px 16px;">
+
+<iframe  name ="iframe_div" class="float-right" width="800" height="900" src="Feed.html" frameBorder= "0"></iframe>
+<p>
+<dl>
+<dt><h2>Events</h2></dt>
+  <dt><a href="google" ><img src="chris.png" height="200" width="180"</a></dt>
+<dt><a href="google"><img src="tg.png" height=200 width=180</a></dt>
+  <dt><a href="google"><img src="ny.png" height=200 width=180</a></dt>
+  
+  <dt>Milk</dt>
+  
+</dl>
+</p>
+<div class="clear"></div>
+</div>
+
+
+
+</body>
+</html>
